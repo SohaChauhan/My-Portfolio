@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import blinklink from "/public/BlinkLink.png";
 import sohafashion from "/public/sohafashion.png";
+import project3 from "/public/FireDetection.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
@@ -156,7 +157,7 @@ export default function Projects() {
                   ))}
                 </div>
               </div>
-              <div className="flex justify-start items-center">
+              <div className="flex justify-between items-center">
                 <Link
                   href="https://sohafashion.co.in/"
                   target="_blank"
@@ -169,6 +170,69 @@ export default function Projects() {
             </div>
           </motion.div>
 
+          {/* Project Card 3 */}
+          <motion.div
+            className="dark:bg-[#343434] bg-fuchsia-50 dark:text-white text-[#1D4755]  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 group flex flex-col"
+            variants={itemVariants}
+            whileHover={{ y: -10 }}
+          >
+            <div className="relative">
+              <Image
+                src={project3}
+                alt="Fire Detection App"
+                className="rounded-t-lg w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t dark:from-[#343434]/80 from-fuchsia-50/50 to-transparent rounded-t-lg"></div>
+            </div>
+            <div className="px-6 py-4 flex flex-col justify-between flex-grow">
+              <div>
+                <h1 className="text-2xl text-[#e9b171] font-bold mb-2">
+                  Fire and Smoke Detection & Alert System
+                </h1>
+                <p className="mb-4 text-justify">
+                  A real-time web-based system that detects fire or smoke in
+                  uploaded videos. The app processes the video, highlights
+                  affected regions, and sends automated SMS alerts in case of an
+                  anomaly.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {[
+                    "Streamlit",
+                    "Python",
+                    "OpenCV",
+                    "YOLOv8",
+                    "DeepSort",
+                    "TwilioAPI",
+                    "Git",
+                  ].map((tech) => (
+                    <span
+                      key={tech}
+                      className="bg-[#c22085] text-white py-1 px-2 text-xs rounded-2xl"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="flex justify-between items-center">
+                <Link
+                  href="https://fire-and-smoke-detection-and-alert-system.streamlit.app/"
+                  target="_blank"
+                  className="text-[#2d9687] text-lg font-semibold"
+                >
+                  Visit Live{" "}
+                  <FontAwesomeIcon icon={faExternalLink} className="text-md" />
+                </Link>
+                <Link
+                  href="https://github.com/SohaChauhan/Fire-and-Smoke-Detection-and-Alert-System"
+                  target="_blank"
+                  className="text-[#2d9687] text-lg font-semibold"
+                >
+                  <FontAwesomeIcon icon={faGithub} className="text-2xl" />
+                </Link>
+              </div>
+            </div>
+          </motion.div>
           {/* Placeholder or additional project */}
           <motion.div
             className="dark:bg-[#343434] bg-fuchsia-50 dark:text-white text-[#1D4755] p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 group  flex items-center justify-center text-center "
