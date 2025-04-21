@@ -1,21 +1,25 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const CustomCursor = () => {
   const innerRef = useRef(null);
   const outerRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
+  const [hasMounted, setHasMounted] = useState(false);
 
   useEffect(() => {
-    const isMobile =
+    setHasMounted(true);
+
+    const checkMobile =
       /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
         navigator.userAgent
       ) || window.innerWidth < 768;
 
-    if (isMobile) {
-      // Don't run the custom cursor logic on mobile
-      return;
-    }
+    setIsMobile(checkMobile);
+
+    if (checkMobile) return;
+
     let mouseX = 0,
       mouseY = 0;
     let currentX = 0,
@@ -64,12 +68,9 @@ const CustomCursor = () => {
       outerRef.current?.classList.remove("clicked");
     };
 
-    const handleMouseDown = () => addClickEffect();
-    const handleMouseUp = () => removeClickEffect();
-
     document.addEventListener("mousemove", handleMouseMove);
-    document.addEventListener("mousedown", handleMouseDown);
-    document.addEventListener("mouseup", handleMouseUp);
+    document.addEventListener("mousedown", addClickEffect);
+    document.addEventListener("mouseup", removeClickEffect);
 
     const clickableElements = document.querySelectorAll(
       "button, a, [role='button'], input, textarea"
@@ -82,8 +83,8 @@ const CustomCursor = () => {
 
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
-      document.removeEventListener("mousedown", handleMouseDown);
-      document.removeEventListener("mouseup", handleMouseUp);
+      document.removeEventListener("mousedown", addClickEffect);
+      document.removeEventListener("mouseup", removeClickEffect);
       clickableElements.forEach((el) => {
         el.removeEventListener("mouseenter", addCursorHover);
         el.removeEventListener("mouseleave", removeCursorHover);
@@ -91,14 +92,15 @@ const CustomCursor = () => {
     };
   }, []);
 
+  // Wait until hydration to render anything
+  if (!hasMounted || isMobile) return null;
+
   return (
     <>
-      {/* Inner Circle */}
       <div
         ref={innerRef}
         className="custom-cursor-inner dark:bg-white bg-black"
       />
-      {/* Outer Circle */}
       <div
         ref={outerRef}
         className="custom-cursor-outer dark:bg-white/40 bg-black/20"
