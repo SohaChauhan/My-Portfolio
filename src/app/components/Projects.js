@@ -233,14 +233,6 @@ export default function Projects() {
               </div>
             </div>
           </motion.div>
-          {/* Placeholder or additional project */}
-          <motion.div
-            className="dark:bg-[#343434] bg-fuchsia-50 dark:text-white text-[#1D4755] p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 group  flex items-center justify-center text-center "
-            variants={itemVariants}
-            whileHover={{ y: -10 }}
-          >
-            <p className="text-lg">More Projects Coming Soon...</p>
-          </motion.div>
         </motion.div>
       </div>
     </motion.div>
