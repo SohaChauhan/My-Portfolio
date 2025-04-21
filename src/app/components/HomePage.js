@@ -9,7 +9,6 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { animate } from "motion";
 import { useEffect } from "react";
-
 export default function HomePage() {
   let [ref, { width }] = useMeasure();
   const xTranslation = useMotionValue(0);
@@ -137,16 +136,17 @@ export default function HomePage() {
                 className="pl-2 text-[#c22085] "
               />
             </motion.a>
-            <motion.a
-              href="/resume.pdf"
-              download
-              className="w-[150px] px-4 py-2 flex items-center justify-center bg-[#353535] hover:bg-[#c22085] rounded-xl text-white border border-[#e2b8aa]"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              Resume
-              <FontAwesomeIcon icon={faDownload} className="pl-2" />
-            </motion.a>
+
+            <Link href="Resume.pdf">
+              <motion.p
+                className="w-[150px] px-4 py-2 flex items-center justify-center bg-[#353535] hover:bg-[#c22085] rounded-xl text-white border border-[#e2b8aa]"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                Resume
+                <FontAwesomeIcon icon={faDownload} className="pl-2" />
+              </motion.p>
+            </Link>
           </motion.div>
 
           <motion.div

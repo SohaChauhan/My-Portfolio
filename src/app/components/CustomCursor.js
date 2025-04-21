@@ -7,6 +7,15 @@ const CustomCursor = () => {
   const outerRef = useRef(null);
 
   useEffect(() => {
+    const isMobile =
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      ) || window.innerWidth < 768;
+
+    if (isMobile) {
+      // Don't run the custom cursor logic on mobile
+      return;
+    }
     let mouseX = 0,
       mouseY = 0;
     let currentX = 0,

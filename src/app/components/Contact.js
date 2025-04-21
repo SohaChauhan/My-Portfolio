@@ -195,9 +195,9 @@ export default function Contact() {
           {/* Socials */}
           <motion.div
             className="px-6 rounded-lg w-full flex gap-8 items-center lg:justify-start justify-center"
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
+            // variants={containerVariants}
+            // initial="hidden"
+            // whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
           >
             <motion.a
