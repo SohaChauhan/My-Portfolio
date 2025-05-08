@@ -62,7 +62,7 @@ export default function Contact() {
   };
   return (
     <motion.div
-      className="flex flex-col min-h-screen items-center justify-center font-serif px-5 sm:px-10 lg:px-0 "
+      className="flex flex-col min-h-fit items-center justify-center font-serif px-5 sm:px-10 lg:px-0 pt-4"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}

@@ -38,7 +38,7 @@ export default function Education() {
   };
   return (
     <motion.div
-      className="flex flex-col min-h-screen items-center justify-center font-serif px-6 sm:px-10 lg:px-24 xl:px-40 "
+      className="flex flex-col min-h-fit items-center justify-center font-serif px-6 sm:px-10 lg:px-24 xl:px-40 pt-14"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}

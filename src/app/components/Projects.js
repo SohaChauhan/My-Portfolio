@@ -3,10 +3,13 @@ import Link from "next/link";
 import blinklink from "/public/BlinkLink.png";
 import sohafashion from "/public/sohafashion.png";
 import project3 from "/public/FireDetection.png";
+import AINotesApp from "/public/AINotesApp.png";
+import PortfolioWeb from "/public/Portfolio.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "motion/react";
+import Portfolio from "../page";
 export default function Projects() {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -33,7 +36,7 @@ export default function Projects() {
   };
   return (
     <motion.div
-      className="flex flex-col min-h-screen items-center justify-center px-4 sm:px-6 lg:px-24 "
+      className="flex flex-col min-h-fit items-center justify-center px-4 sm:px-6 lg:px-24 pt-14"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
@@ -225,6 +228,134 @@ export default function Projects() {
                 </Link>
                 <Link
                   href="https://github.com/SohaChauhan/Fire-and-Smoke-Detection-and-Alert-System"
+                  target="_blank"
+                  className="text-[#2d9687] text-lg font-semibold"
+                >
+                  <FontAwesomeIcon icon={faGithub} className="text-2xl" />
+                </Link>
+              </div>
+            </div>
+          </motion.div>
+          {/* Project Card 4 */}
+          <motion.div
+            className="dark:bg-[#343434] bg-fuchsia-50 dark:text-white text-[#1D4755] rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 group flex flex-col"
+            variants={itemVariants}
+            whileHover={{ y: -10 }}
+          >
+            <motion.div className="relative">
+              <Image
+                src={AINotesApp}
+                alt="AI Notes App"
+                className="rounded-t-lg w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t dark:from-[#343434]/80 from-fuchsia-50/50 to-transparent rounded-t-lg"></div>
+            </motion.div>
+            <div className="px-6 py-4 flex flex-col justify-between flex-grow">
+              <div>
+                <h1 className="text-2xl text-[#e9b171] font-bold mb-2">
+                  AI Notes App
+                </h1>
+                <p className="mb-4 text-justify">
+                  A sleek, modern note-taking app with Responsive & accessible
+                  UI and Light/Dark mode toggle, powered by AI. Features
+                  include: Add, view, favorite, and summarize your notes with
+                  the help of Grok AI API.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {[
+                    "NextJS",
+                    "Tailwind CSS",
+                    "Supabase(Auth + Database)",
+                    "Shadcn/ui",
+                    "React Query",
+                    "Vercel",
+                    "Git",
+                    "Grok API",
+                  ].map((tech) => (
+                    <span
+                      key={tech}
+                      className="bg-[#c22085] text-white py-1 px-2 text-xs rounded-2xl"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="flex justify-between items-center">
+                <Link
+                  href="https://ai-notes-app-soha.vercel.app/"
+                  target="_blank"
+                  className="text-[#2d9687] text-lg font-semibold"
+                >
+                  Visit Live{" "}
+                  <FontAwesomeIcon icon={faExternalLink} className="text-md" />
+                </Link>
+                <Link
+                  href="https://github.com/SohaChauhan/ai-notes-app"
+                  target="_blank"
+                  className="text-[#2d9687] text-lg font-semibold"
+                >
+                  <FontAwesomeIcon icon={faGithub} className="text-2xl" />
+                </Link>
+              </div>
+            </div>
+          </motion.div>
+          {/* Project Card 5 */}
+          <motion.div
+            className="dark:bg-[#343434] bg-fuchsia-50 dark:text-white text-[#1D4755] rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 group flex flex-col"
+            variants={itemVariants}
+            whileHover={{ y: -10 }}
+          >
+            <motion.div className="relative">
+              <Image
+                src={PortfolioWeb}
+                alt="Portfolio Website"
+                className="rounded-t-lg w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t dark:from-[#343434]/80 from-fuchsia-50/50 to-transparent rounded-t-lg"></div>
+            </motion.div>
+            <div className="px-6 py-4 flex flex-col justify-between flex-grow">
+              <div>
+                <h1 className="text-2xl text-[#e9b171] font-bold mb-2">
+                  Portfolio Website
+                </h1>
+                <p className="mb-4 text-justify">
+                  Built a fully responsive and animated personal portfolio
+                  website. Features include: dark/light theme toggle and a
+                  contact form that sends emails. Showcases various sections
+                  such as About Me, Projects, and Education with smooth
+                  transitions.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {[
+                    "NextJS",
+                    "Tailwind CSS",
+                    "Framer Motion",
+                    "Shadcn/ui (dark/light theme toggle)",
+                    "EmailJS",
+                    "Vercel",
+                    "Git",
+                  ].map((tech) => (
+                    <span
+                      key={tech}
+                      className="bg-[#c22085] text-white py-1 px-2 text-xs rounded-2xl"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="flex justify-between items-center">
+                <Link
+                  href="https://sohachauhan.vercel.app/"
+                  target="_blank"
+                  className="text-[#2d9687] text-lg font-semibold"
+                >
+                  Visit Live{" "}
+                  <FontAwesomeIcon icon={faExternalLink} className="text-md" />
+                </Link>
+                <Link
+                  href="https://github.com/SohaChauhan/My-Portfolio"
                   target="_blank"
                   className="text-[#2d9687] text-lg font-semibold"
                 >

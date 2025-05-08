@@ -35,7 +35,7 @@ export default function AboutMe() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.5 }}
-      className="flex flex-col min-h-screen items-center justify-center px-10 md:px-12 min-[1450px]:mx-40 "
+      className="flex flex-col min-h-fit items-center justify-center px-10 md:px-12 min-[1450px]:mx-40 pt-14"
     >
       {/* <div className="h-[160px]"></div> */}
 
