@@ -99,7 +99,7 @@ const CustomCursor = () => {
     <>
       <div
         ref={innerRef}
-        className="custom-cursor-inner dark:bg-white bg-black"
+        className="custom-cursor-inner dark:bg-[#ffe93f] bg-[#0a7162]"
       />
       <div
         ref={outerRef}

@@ -84,7 +84,9 @@ export default function Contact() {
         >
           <h1 className="text-2xl">Get in Touch</h1>
           <div className="flex flex-col gap-1 w-full dark:text-white text-[#1D4755]">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name" className="cursor-none">
+              Name
+            </label>
             <input
               type="text"
               id="name"
@@ -95,7 +97,9 @@ export default function Contact() {
             />
           </div>
           <div className="flex flex-col gap-1">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email" className="cursor-none">
+              Email
+            </label>
             <input
               type="email"
               id="email"
@@ -106,7 +110,9 @@ export default function Contact() {
             />
           </div>
           <div className="flex flex-col gap-1 ">
-            <label htmlFor="subject">Subject</label>
+            <label htmlFor="subject" className="cursor-none">
+              Subject
+            </label>
             <input
               type="text"
               id="subject"
@@ -117,7 +123,9 @@ export default function Contact() {
             />
           </div>
           <div className="flex flex-col gap-1">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message" className="cursor-none">
+              Message
+            </label>
             <textarea
               id="message"
               name="message"
@@ -131,7 +139,7 @@ export default function Contact() {
             type="submit"
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.9 }}
-            className="dark:bg-[#2d9687] bg-[#e9b171]  rounded-lg p-3"
+            className="dark:bg-[#2d9687] bg-[#e9b171]  rounded-lg p-3 cursor-none"
           >
             Send Message
           </motion.button>
