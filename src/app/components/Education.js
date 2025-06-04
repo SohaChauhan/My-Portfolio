@@ -78,7 +78,7 @@ export default function Education() {
               <FontAwesomeIcon icon={faCalendarAlt} className="pr-2" />
               Sep 2022 - June 2026
             </p>
-            <p>CGPA: 8.27/10</p>
+            <p>CGPA: 8.20/10</p>
           </motion.div>
 
           {/* 12th */}
