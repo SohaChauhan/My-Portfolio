@@ -57,19 +57,20 @@ export default function AboutMe() {
             <div className="absolute inset-0 dark:bg-[#343434] bg-fuchsia-50 rounded-lg transform -rotate-3 scale-105 shadow-2xl"></div>
             <div className="relative px-6 py-7 dark:text-[#e2b8aa] text-[#1D4755] text-justify text-sm sm:text-base leading-relaxed">
               I am a Computer Science undergraduate at Institute of Technology,
-              Nirma University, with a strong focus on full-stack web
-              development. I am passionate about building end-to-end web
-              applications that are scalable, responsive, and user-friendly. My
-              skillset spans both frontend and backend development — from
-              crafting clean, modern UIs to designing efficient RESTful APIs and
-              managing databases.
+              Nirma University, with a passion for technology and
+              problem-solving across diverse domains. My experience spans
+              software engineering, web development, data analysis, and more. I
+              am driven by curiosity and a desire to create impactful solutions,
+              whether it's building robust applications, analyzing data, or
+              exploring new technologies.
               <br />
-              <br />I am proficient in working with modern technologies like
-              Next.js, React.js, Node.js, Express.js, MongoDB, and Tailwind CSS.
-              I enjoy turning ideas into real-world web solutions, writing clean
-              and maintainable code, and keeping up with the latest trends in
-              web development. I thrive in collaborative environments and am
-              always eager to learn, improve, and innovate.
+              <br />I am adaptable and quick to learn, comfortable working with
+              a wide range of tools and frameworks such as Next.js, React.js,
+              Node.js, Express.js, MongoDB, and Tailwind CSS, among others. I
+              enjoy collaborating with teams, tackling new challenges, and
+              continuously expanding my skill set to contribute effectively in
+              any technical role. I am committed to writing clean, maintainable
+              code and staying updated with the latest trends in technology.
             </div>
           </div>
         </motion.div>

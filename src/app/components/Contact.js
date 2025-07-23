@@ -63,10 +63,9 @@ export default function Contact() {
   return (
     <motion.div
       className="flex flex-col min-h-fit items-center justify-center font-serif px-5 sm:px-10 lg:px-0 pt-4"
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: -20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 1 }}
     >
       {/* <div className="h-[80px]"></div> */}
       <h1 className="text-4xl font-semibold text-center">Contact Me</h1>
