@@ -17,6 +17,7 @@ const NavBar = ({ activeSection }) => {
     { id: "home", label: "Home" },
     { id: "about-me", label: "About" },
     { id: "projects", label: "Projects" },
+    { id: "experience", label: "Experience" },
     { id: "education", label: "Education" },
     { id: "contact", label: "Contact" },
   ];

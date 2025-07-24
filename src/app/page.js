@@ -1,6 +1,7 @@
 "use client";
 import NavBar from "./components/NavBar";
 import HomePage from "./components/HomePage";
+import Experience from "./components/Experience";
 import { useState } from "react";
 import { motion } from "motion/react";
 import { useEffect } from "react";
@@ -92,6 +93,9 @@ export default function Portfolio() {
         </motion.section>
         <motion.section id="projects" variants={fadeInUp}>
           <Projects />
+        </motion.section>
+        <motion.section id="experience" variants={fadeInUp}>
+          <Experience />
         </motion.section>
         <motion.section id="education" variants={fadeInUp}>
           <Education />
