@@ -62,7 +62,7 @@ export default function Experience() {
             whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.2 }}
             style={{
-              background: `radial-gradient(1000px circle at ${mousePosition.x}px ${mousePosition.y}px,rgba(233, 177, 113,0.8),rgba(233, 177, 113,0.7) 80%)`,
+              background: `radial-gradient(1000px circle at ${mousePosition.x}px ${mousePosition.y}px,rgba(45, 150, 135,0.8),rgba(45, 150, 135,0.7) 80%)`,
               transition: "background 0.1s ease",
             }}
           >
