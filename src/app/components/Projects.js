@@ -386,21 +386,16 @@ export default function Projects() {
                   modern, and easy to use.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {[
-                    "Next.js",
-                    "React",
-                    "Tailwind CSS",
-                    "Vercel",
-                    "Git",
-                    "Github",
-                  ].map((tech) => (
-                    <span
-                      key={tech}
-                      className="bg-[#c22085] text-white py-1 px-2 text-xs rounded-2xl"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                  {["NextJS", "Tailwind CSS", "Vercel", "Git", "Github"].map(
+                    (tech) => (
+                      <span
+                        key={tech}
+                        className="bg-[#c22085] text-white py-1 px-2 text-xs rounded-2xl"
+                      >
+                        {tech}
+                      </span>
+                    )
+                  )}
                 </div>
               </div>
               <div className="flex justify-between items-center">
