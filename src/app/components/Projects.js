@@ -4,8 +4,9 @@ import blinklink from "/public/BlinkLink.png";
 import sohafashion from "/public/sohafashion.png";
 import project3 from "/public/FireDetection.png";
 import AINotesApp from "/public/AINotesApp.png";
-import PortfolioWeb from "/public/Portfolio.png";
+import finhelper from "/public/FinHelper.png";
 import Spenza from "/public/Spenza.png";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
@@ -368,7 +369,7 @@ export default function Projects() {
           >
             <motion.div className="relative">
               <Image
-                src={AINotesApp} // Placeholder image, update if you have a FinHelper logo
+                src={finhelper} // Placeholder image, update if you have a FinHelper logo
                 alt="FinHelper App"
                 className="rounded-t-lg w-full object-cover"
               />
@@ -380,7 +381,9 @@ export default function Projects() {
                   FinHelper - CVP Analysis Tool
                 </h1>
                 <p className="mb-4 text-justify">
-                  FinHelper is a simple CVP analysis tool for managing products, visualizing break-even points, and exporting results. Fast, modern, and easy to use.
+                  FinHelper is a simple CVP analysis tool for managing products,
+                  visualizing break-even points, and exporting results. Fast,
+                  modern, and easy to use.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {[
@@ -389,7 +392,7 @@ export default function Projects() {
                     "Tailwind CSS",
                     "Vercel",
                     "Git",
-                    "Github"
+                    "Github",
                   ].map((tech) => (
                     <span
                       key={tech}
