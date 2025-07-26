@@ -368,8 +368,8 @@ export default function Projects() {
           >
             <motion.div className="relative">
               <Image
-                src={PortfolioWeb}
-                alt="Portfolio Website"
+                src={AINotesApp} // Placeholder image, update if you have a FinHelper logo
+                alt="FinHelper App"
                 className="rounded-t-lg w-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t dark:from-[#343434]/80 from-fuchsia-50/50 to-transparent rounded-t-lg"></div>
@@ -377,24 +377,19 @@ export default function Projects() {
             <div className="px-6 py-4 flex flex-col justify-between flex-grow">
               <div>
                 <h1 className="text-2xl text-[#e9b171] font-bold mb-2">
-                  Portfolio Website
+                  FinHelper - CVP Analysis Tool
                 </h1>
                 <p className="mb-4 text-justify">
-                  Built a fully responsive and animated personal portfolio
-                  website. Features include: dark/light theme toggle and a
-                  contact form that sends emails. Showcases various sections
-                  such as About Me, Projects, and Education with smooth
-                  transitions.
+                  FinHelper is a simple CVP analysis tool for managing products, visualizing break-even points, and exporting results. Fast, modern, and easy to use.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {[
-                    "NextJS",
+                    "Next.js",
+                    "React",
                     "Tailwind CSS",
-                    "Framer Motion",
-                    "Shadcn/ui (dark/light theme toggle)",
-                    "EmailJS",
                     "Vercel",
                     "Git",
+                    "Github"
                   ].map((tech) => (
                     <span
                       key={tech}
@@ -407,7 +402,7 @@ export default function Projects() {
               </div>
               <div className="flex justify-between items-center">
                 <Link
-                  href="https://sohachauhan.vercel.app/"
+                  href="https://finhelper.vercel.app"
                   target="_blank"
                   className="text-[#2d9687] text-lg font-semibold"
                 >
@@ -415,7 +410,7 @@ export default function Projects() {
                   <FontAwesomeIcon icon={faExternalLink} className="text-md" />
                 </Link>
                 <Link
-                  href="https://github.com/SohaChauhan/My-Portfolio"
+                  href="https://github.com/SohaChauhan/FinHelper"
                   target="_blank"
                   className="text-[#2d9687] text-lg font-semibold"
                 >
