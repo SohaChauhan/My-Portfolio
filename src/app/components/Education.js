@@ -78,7 +78,7 @@ export default function Education() {
               <FontAwesomeIcon icon={faCalendarAlt} className="pr-2" />
               Sep 2022 - June 2026
             </p>
-            <p>CGPA: 8.20/10</p>
+            <p>CGPA: 8.28/10</p>
           </motion.div>
 
           {/* 12th */}
@@ -102,7 +102,7 @@ export default function Education() {
               <FontAwesomeIcon icon={faCalendarAlt} className="pr-2" />
               June 2021 - April 2022
             </p>
-            <p>Percentage: 85.54%</p>
+            {/* <p>Percentage: 85.54%</p> */}
           </motion.div>
 
           {/* 10th */}
@@ -126,7 +126,7 @@ export default function Education() {
               <FontAwesomeIcon icon={faCalendarAlt} className="pr-2" />
               June 2019 - April 2020
             </p>
-            <p>Percentage: 87.00%</p>
+            {/* <p>Percentage: 87.00%</p> */}
           </motion.div>
         </motion.div>
       </div>
