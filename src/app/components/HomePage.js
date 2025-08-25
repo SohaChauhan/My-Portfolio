@@ -9,8 +9,6 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { animate } from "motion";
 import { useEffect } from "react";
-import Carousel from "@/components/ui/Carousal";
-
 export default function HomePage() {
   let [ref, { width }] = useMeasure();
   const xTranslation = useMotionValue(0);
@@ -24,13 +22,14 @@ export default function HomePage() {
     "/logos/7.png",
     "/logos/8.png",
     "/logos/9.png",
-    "/logos/10.png",
+    // "/logos/10.png",
     "/logos/11.png",
     "/logos/12.png",
     "/logos/13.png",
     "/logos/14.png",
     "/logos/15.png",
     "/logos/20.png",
+    "/logos/24.png",
   ];
   useEffect(() => {
     let controls;
