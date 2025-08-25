@@ -167,3 +167,8 @@ textarea {
     @apply bg-background text-foreground;
   }
 }
+
+.number-slide1 {
+  height: 50px;
+  width: 50px;
+}

@@ -9,6 +9,8 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { animate } from "motion";
 import { useEffect } from "react";
+import Carousel from "@/components/ui/Carousal";
+
 export default function HomePage() {
   let [ref, { width }] = useMeasure();
   const xTranslation = useMotionValue(0);
@@ -120,8 +122,24 @@ export default function HomePage() {
             to grow through real-world projects.
           </motion.p>
 
-          <motion.div
+          {/* <motion.div
             className="flex flex-row gap-4 justify-center lg:justify-start items-center mt-2"
+            variants={itemVariants}
+          >
+            <Link href="Resume.pdf">
+              <motion.p
+                className="w-[150px] px-4 py-2 flex items-center justify-center bg-[#353535] hover:bg-[#c22085] rounded-xl text-white border border-[#e2b8aa]"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                Resume
+                <FontAwesomeIcon icon={faDownload} className="pl-2" />
+              </motion.p>
+            </Link>
+          </motion.div> */}
+
+          <motion.div
+            className="flex lg:gap-7 gap-4 lg:mt-3 md:mt-2 justify-center lg:justify-start lg:pr-2"
             variants={itemVariants}
           >
             <motion.a
@@ -136,27 +154,10 @@ export default function HomePage() {
                 className="pl-2 text-[#c22085] "
               />
             </motion.a>
-
-            <Link href="Resume.pdf">
-              <motion.p
-                className="w-[150px] px-4 py-2 flex items-center justify-center bg-[#353535] hover:bg-[#c22085] rounded-xl text-white border border-[#e2b8aa]"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                Resume
-                <FontAwesomeIcon icon={faDownload} className="pl-2" />
-              </motion.p>
-            </Link>
-          </motion.div>
-
-          <motion.div
-            className="flex lg:gap-7 gap-4 lg:mt-3 md:mt-2 justify-center lg:justify-start lg:px-2"
-            variants={itemVariants}
-          >
             <motion.a
               href="https://www.linkedin.com/in/sohachauhan/"
               target="_blank"
-              className="text-2xl sm:text-3xl"
+              className="text-2xl sm:text-3xl text-[#c22085]"
               whileHover={{ scale: 1.15 }}
               whileTap={{ scale: 0.9 }}
               transition={{ duration: 0.2 }}
@@ -166,7 +167,7 @@ export default function HomePage() {
             <motion.a
               href="https://github.com/SohaChauhan"
               target="_blank"
-              className="text-2xl sm:text-3xl"
+              className="text-2xl sm:text-3xl text-[#c22085]"
               whileHover={{ scale: 1.15 }}
               whileTap={{ scale: 0.9 }}
               transition={{ duration: 0.2 }}
@@ -186,6 +187,7 @@ export default function HomePage() {
         <div className="pointer-events-none absolute left-0 top-0 h-full w-1/3 bg-gradient-to-r dark:from-[#0c0c0c] from-[#eeeeff] to-transparent z-10" />
         {/* Right Gradient */}
         <div className="pointer-events-none absolute right-0 top-0 h-full w-1/3 bg-gradient-to-l dark:from-[#0c0c0c] from-[#eeeeff] to-transparent z-10" />
+        {/* <Carousel /> */}
 
         {/* Scrolling Icons */}
         <motion.div
